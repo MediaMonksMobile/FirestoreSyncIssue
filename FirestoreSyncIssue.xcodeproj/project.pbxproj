@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F20CA15420FCD41F00A723FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F20CA15320FCD41F00A723FC /* AppDelegate.m */; };
+		F20CA15720FCD41F00A723FC /* ExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F20CA15620FCD41F00A723FC /* ExampleViewController.m */; };
+		F20CA15C20FCD41F00A723FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20CA15B20FCD41F00A723FC /* Assets.xcassets */; };
+		F20CA15F20FCD41F00A723FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F20CA15D20FCD41F00A723FC /* LaunchScreen.storyboard */; };
+		F20CA16220FCD41F00A723FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F20CA16120FCD41F00A723FC /* main.m */; };
+		F20CA16C20FCD41F00A723FC /* FirestoreSyncIssueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F20CA16B20FCD41F00A723FC /* FirestoreSyncIssueTests.m */; };
+		F267079920FCD71E00E0A257 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F267079820FCD71D00E0A257 /* GoogleService-Info.plist */; };
+		F267079C20FCE08200E0A257 /* ExampleView.m in Sources */ = {isa = PBXBuildFile; fileRef = F267079B20FCE08200E0A257 /* ExampleView.m */; };
+		FC10F39229F0FF6CFA9815B6 /* libPods-FirestoreSyncIssue.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80E75D52CD5E44B092DEA808 /* libPods-FirestoreSyncIssue.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F20CA16820FCD41F00A723FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F20CA14720FCD41F00A723FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F20CA14E20FCD41F00A723FC;
+			remoteInfo = FirestoreSyncIssue;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		80E75D52CD5E44B092DEA808 /* libPods-FirestoreSyncIssue.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FirestoreSyncIssue.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A89B35C41FA18DE82AA16A45 /* Pods-FirestoreSyncIssue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirestoreSyncIssue.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirestoreSyncIssue/Pods-FirestoreSyncIssue.release.xcconfig"; sourceTree = "<group>"; };
+		F00D31A705DDCC3A474E19BB /* Pods-FirestoreSyncIssue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirestoreSyncIssue.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirestoreSyncIssue/Pods-FirestoreSyncIssue.debug.xcconfig"; sourceTree = "<group>"; };
+		F20CA14F20FCD41F00A723FC /* FirestoreSyncIssue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirestoreSyncIssue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F20CA15220FCD41F00A723FC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F20CA15320FCD41F00A723FC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F20CA15520FCD41F00A723FC /* ExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleViewController.h; sourceTree = "<group>"; };
+		F20CA15620FCD41F00A723FC /* ExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleViewController.m; sourceTree = "<group>"; };
+		F20CA15B20FCD41F00A723FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F20CA15E20FCD41F00A723FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F20CA16020FCD41F00A723FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F20CA16120FCD41F00A723FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F20CA16720FCD41F00A723FC /* FirestoreSyncIssueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirestoreSyncIssueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F20CA16B20FCD41F00A723FC /* FirestoreSyncIssueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirestoreSyncIssueTests.m; sourceTree = "<group>"; };
+		F20CA16D20FCD41F00A723FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F267079820FCD71D00E0A257 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F267079A20FCE08200E0A257 /* ExampleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleView.h; sourceTree = "<group>"; };
+		F267079B20FCE08200E0A257 /* ExampleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F20CA14C20FCD41F00A723FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC10F39229F0FF6CFA9815B6 /* libPods-FirestoreSyncIssue.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F20CA16420FCD41F00A723FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9473C27714384C576B7731AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80E75D52CD5E44B092DEA808 /* libPods-FirestoreSyncIssue.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7E13B6DAD63FD2E21F0D6E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F00D31A705DDCC3A474E19BB /* Pods-FirestoreSyncIssue.debug.xcconfig */,
+				A89B35C41FA18DE82AA16A45 /* Pods-FirestoreSyncIssue.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F20CA14620FCD41F00A723FC = {
+			isa = PBXGroup;
+			children = (
+				F20CA15120FCD41F00A723FC /* FirestoreSyncIssue */,
+				F20CA16A20FCD41F00A723FC /* FirestoreSyncIssueTests */,
+				F20CA15020FCD41F00A723FC /* Products */,
+				D7E13B6DAD63FD2E21F0D6E1 /* Pods */,
+				9473C27714384C576B7731AA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F20CA15020FCD41F00A723FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F20CA14F20FCD41F00A723FC /* FirestoreSyncIssue.app */,
+				F20CA16720FCD41F00A723FC /* FirestoreSyncIssueTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F20CA15120FCD41F00A723FC /* FirestoreSyncIssue */ = {
+			isa = PBXGroup;
+			children = (
+				F20CA15220FCD41F00A723FC /* AppDelegate.h */,
+				F20CA15320FCD41F00A723FC /* AppDelegate.m */,
+				F20CA15B20FCD41F00A723FC /* Assets.xcassets */,
+				F267079A20FCE08200E0A257 /* ExampleView.h */,
+				F267079B20FCE08200E0A257 /* ExampleView.m */,
+				F20CA15520FCD41F00A723FC /* ExampleViewController.h */,
+				F20CA15620FCD41F00A723FC /* ExampleViewController.m */,
+				F267079820FCD71D00E0A257 /* GoogleService-Info.plist */,
+				F20CA16020FCD41F00A723FC /* Info.plist */,
+				F20CA15D20FCD41F00A723FC /* LaunchScreen.storyboard */,
+				F20CA16120FCD41F00A723FC /* main.m */,
+			);
+			path = FirestoreSyncIssue;
+			sourceTree = "<group>";
+		};
+		F20CA16A20FCD41F00A723FC /* FirestoreSyncIssueTests */ = {
+			isa = PBXGroup;
+			children = (
+				F20CA16B20FCD41F00A723FC /* FirestoreSyncIssueTests.m */,
+				F20CA16D20FCD41F00A723FC /* Info.plist */,
+			);
+			path = FirestoreSyncIssueTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F20CA14E20FCD41F00A723FC /* FirestoreSyncIssue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F20CA17020FCD41F00A723FC /* Build configuration list for PBXNativeTarget "FirestoreSyncIssue" */;
+			buildPhases = (
+				3F3240D5051DD926003A014A /* [CP] Check Pods Manifest.lock */,
+				F20CA14B20FCD41F00A723FC /* Sources */,
+				F20CA14C20FCD41F00A723FC /* Frameworks */,
+				F20CA14D20FCD41F00A723FC /* Resources */,
+				D74BF2FDDC2898126F23E95D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FirestoreSyncIssue;
+			productName = FirestoreSyncIssue;
+			productReference = F20CA14F20FCD41F00A723FC /* FirestoreSyncIssue.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F20CA16620FCD41F00A723FC /* FirestoreSyncIssueTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F20CA17320FCD41F00A723FC /* Build configuration list for PBXNativeTarget "FirestoreSyncIssueTests" */;
+			buildPhases = (
+				F20CA16320FCD41F00A723FC /* Sources */,
+				F20CA16420FCD41F00A723FC /* Frameworks */,
+				F20CA16520FCD41F00A723FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F20CA16920FCD41F00A723FC /* PBXTargetDependency */,
+			);
+			name = FirestoreSyncIssueTests;
+			productName = FirestoreSyncIssueTests;
+			productReference = F20CA16720FCD41F00A723FC /* FirestoreSyncIssueTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F20CA14720FCD41F00A723FC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "MediaMonks B.V.";
+				TargetAttributes = {
+					F20CA14E20FCD41F00A723FC = {
+						CreatedOnToolsVersion = 9.4;
+					};
+					F20CA16620FCD41F00A723FC = {
+						CreatedOnToolsVersion = 9.4;
+						TestTargetID = F20CA14E20FCD41F00A723FC;
+					};
+				};
+			};
+			buildConfigurationList = F20CA14A20FCD41F00A723FC /* Build configuration list for PBXProject "FirestoreSyncIssue" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F20CA14620FCD41F00A723FC;
+			productRefGroup = F20CA15020FCD41F00A723FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F20CA14E20FCD41F00A723FC /* FirestoreSyncIssue */,
+				F20CA16620FCD41F00A723FC /* FirestoreSyncIssueTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F20CA14D20FCD41F00A723FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F20CA15F20FCD41F00A723FC /* LaunchScreen.storyboard in Resources */,
+				F267079920FCD71E00E0A257 /* GoogleService-Info.plist in Resources */,
+				F20CA15C20FCD41F00A723FC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F20CA16520FCD41F00A723FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F3240D5051DD926003A014A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FirestoreSyncIssue-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D74BF2FDDC2898126F23E95D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FirestoreSyncIssue/Pods-FirestoreSyncIssue-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/gRPC/gRPCCertificates.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FirestoreSyncIssue/Pods-FirestoreSyncIssue-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F20CA14B20FCD41F00A723FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F20CA15720FCD41F00A723FC /* ExampleViewController.m in Sources */,
+				F20CA16220FCD41F00A723FC /* main.m in Sources */,
+				F20CA15420FCD41F00A723FC /* AppDelegate.m in Sources */,
+				F267079C20FCE08200E0A257 /* ExampleView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F20CA16320FCD41F00A723FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F20CA16C20FCD41F00A723FC /* FirestoreSyncIssueTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F20CA16920FCD41F00A723FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F20CA14E20FCD41F00A723FC /* FirestoreSyncIssue */;
+			targetProxy = F20CA16820FCD41F00A723FC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F20CA15D20FCD41F00A723FC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F20CA15E20FCD41F00A723FC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F20CA16E20FCD41F00A723FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F20CA16F20FCD41F00A723FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F20CA17120FCD41F00A723FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F00D31A705DDCC3A474E19BB /* Pods-FirestoreSyncIssue.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BSQK567LG9;
+				INFOPLIST_FILE = FirestoreSyncIssue/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mediamonks.FirestoreSyncIssue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F20CA17220FCD41F00A723FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A89B35C41FA18DE82AA16A45 /* Pods-FirestoreSyncIssue.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BSQK567LG9;
+				INFOPLIST_FILE = FirestoreSyncIssue/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mediamonks.FirestoreSyncIssue;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F20CA17420FCD41F00A723FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BSQK567LG9;
+				INFOPLIST_FILE = FirestoreSyncIssueTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mediamonks.FirestoreSyncIssueTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirestoreSyncIssue.app/FirestoreSyncIssue";
+			};
+			name = Debug;
+		};
+		F20CA17520FCD41F00A723FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BSQK567LG9;
+				INFOPLIST_FILE = FirestoreSyncIssueTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mediamonks.FirestoreSyncIssueTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirestoreSyncIssue.app/FirestoreSyncIssue";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F20CA14A20FCD41F00A723FC /* Build configuration list for PBXProject "FirestoreSyncIssue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F20CA16E20FCD41F00A723FC /* Debug */,
+				F20CA16F20FCD41F00A723FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F20CA17020FCD41F00A723FC /* Build configuration list for PBXNativeTarget "FirestoreSyncIssue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F20CA17120FCD41F00A723FC /* Debug */,
+				F20CA17220FCD41F00A723FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F20CA17320FCD41F00A723FC /* Build configuration list for PBXNativeTarget "FirestoreSyncIssueTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F20CA17420FCD41F00A723FC /* Debug */,
+				F20CA17520FCD41F00A723FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F20CA14720FCD41F00A723FC /* Project object */;
+}
