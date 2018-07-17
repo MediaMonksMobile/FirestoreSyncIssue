@@ -48,6 +48,6 @@ When an item in the table is tapped, then the corresponding document is updated 
 
 - If you add new documents, then they'll appear in the list. Repeating the steps repeats the problem again.
 
-The video of one such sessions can be found [here](./Session 2.mp4).
+The video of one such sessions can be found [here](./Session\ 2.mp4).
 
 ---
