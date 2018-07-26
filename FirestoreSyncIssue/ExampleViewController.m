@@ -24,7 +24,6 @@
 
 	BOOL _busy;
 
-
 	NSMutableArray<FIRDocumentSnapshot *> *_items;
 	id<FIRListenerRegistration> _top5Listener;
 
@@ -103,7 +102,14 @@
 			(long)snapshot.documents.count,
 			(int)snapshot.metadata.fromCache
 		);
+
 		_items = [snapshot.documents copy];
+
+		NSMutableArray *names = [[NSMutableArray alloc] init];
+		for (FIRDocumentSnapshot *s in _items) {
+			[names addObject:s[@"name"]];
+		}
+		NSLog(@"Items: %@", names);
 
 		[self updateUI];
 	}

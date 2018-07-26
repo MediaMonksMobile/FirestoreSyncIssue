@@ -1,6 +1,12 @@
 # Firestore Sync Example App
 
-This is to isolate Firestore's bug with synchronization of limited queries on subcollections.
+This is to isolate Firestore's bugs with limited queries on subcollections. 
+
+**Update:**
+
+The main issue (reported here: https://github.com/firebase/firebase-ios-sdk/issues/1548) appears to be fixed. 
+
+The second issue (see below) seems to be a known one but is not fixed yet, but we use this example to demonstrate it as well.
 
 ## Requirements
 
@@ -36,9 +42,11 @@ When an item in the table is tapped, then the corresponding document is updated 
 
 ## The Main Issue
 
+As mentioned above, this seems to be fixed. See The Second Issue below.
+
 - Make sure you have more than 5 documents in the list (tap "Get More Cookies" button to generate some).
 
-- Start deleting random documents one by one. (You will notice that the list briefly jumps after removal of every item. This is NOT the main issue but a well-known caching problem. Keep deleting.)
+- Start deleting random documents one by one. (You will notice that the list briefly jumps after removal of every item. This is NOT the main issue, see the Second Issue below. Keep deleting.)
 
 - At some point you'll notice that items begin disappearing on their own eventually giving you an empty list. 
 
@@ -49,5 +57,45 @@ When an item in the table is tapped, then the corresponding document is updated 
 - If you add new documents, then they'll appear in the list. Repeating the steps repeats the problem again.
 
 The video of one such sessions can be found [here](./Session.mp4).
+
+## The Second Issue
+
+- Make sure you have have documents in the list (tap "Get More Cookies" button to generate some).
+
+- Delete any document. Note that the list jumps briefly during the process. This is is issue. 
+
+(See another video [here](./Session2.mp4)).
+
+The console reveals that the query listener receives 3 updates:
+
+    2018-07-25 16:30:45.613118+0200 FirestoreSyncIssue[58674:20831755] Deleting the document for 'Stroopwafel #9'
+    2018-07-25 16:30:45.623390+0200 FirestoreSyncIssue[58674:20831755] Top 5 collection snapshot changed: 4 document(s) (from cache: 0)
+    2018-07-25 16:30:45.623700+0200 FirestoreSyncIssue[58674:20831755] Items: (
+        "Coconut macaroon #10",
+        "Oreo #7",
+        "Charcoal biscuit #10",
+        "Cream cracker #9"
+    )
+    2018-07-25 16:30:45.978800+0200 FirestoreSyncIssue[58674:20831755] Deleted 'Stroopwafel #9'
+    2018-07-25 16:30:46.343615+0200 FirestoreSyncIssue[58674:20831755] Top 5 collection snapshot changed: 5 document(s) (from cache: 1)
+    2018-07-25 16:30:46.343926+0200 FirestoreSyncIssue[58674:20831755] Items: (
+        "Coconut macaroon #10",
+        "Stroopwafel #9",
+        "Oreo #7",
+        "Charcoal biscuit #10",
+        "Cream cracker #9"
+    )
+    2018-07-25 16:30:46.474503+0200 FirestoreSyncIssue[58674:20831755] Top 5 collection snapshot changed: 5 document(s) (from cache: 0)
+    2018-07-25 16:30:46.474843+0200 FirestoreSyncIssue[58674:20831755] Items: (
+        "Coconut macaroon #10",
+        "Oreo #7",
+        "Charcoal biscuit #10",
+        "Cream cracker #9",
+        "Charcoal biscuit #8"
+    )
+
+In the first update the item appears to be immediatelly deleted, which is expected. Then we get an update from cache where this item is back and a bit later we see the snapshot properly updated with the deleted item being gone finally and a new one appearing at the 5th place.
+
+We tried to work this problem around by ignoring snapshots from the cache in case we had non-cached data before, however this does not work in all the cases, sometimes a cached update is all we get.
 
 ---
