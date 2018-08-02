@@ -7,7 +7,7 @@
 
 #import "ExampleViewController.h"
 
-#import <Firebase/Firebase.h>
+#import <FirebaseCore/FirebaseCore.h>
 
 @interface AppDelegate ()
 @end

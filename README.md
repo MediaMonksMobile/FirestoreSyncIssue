@@ -8,6 +8,10 @@ The main issue (reported here: https://github.com/firebase/firebase-ios-sdk/issu
 
 The second issue (see below) seems to be a known one but is not fixed yet, but we use this example to demonstrate it as well.
 
+**Update 2:**
+
+The second issue has been fixed. See https://github.com/firebase/firebase-ios-sdk/issues/1591.
+
 ## Requirements
 
 A Firestore project was set up for this example (`firestore-sync-issue-example`) and the corresponding
